@@ -6,7 +6,7 @@ function checkInput(id, errorId, regex, errorMessage) {
     if (regex.test(inputValue)) {
         errorSpan.style.display = "none";
         input.style.boxShadow = "none";
-        input.style.border = "1px solid black"
+        input.style.border = "1px solid grey"
         return true;
     } else {
         errorSpan.style.display = "block";
