@@ -6,10 +6,11 @@ function checkInput(id, errorId, regex, errorMessage) {
     if (regex.test(inputValue)) {
         errorSpan.style.display = "none";
         input.style.boxShadow = "none";
+        input.style.border = "1px solid black"
         return true;
     } else {
         errorSpan.style.display = "block";
-        input.style.border = "1px red"
+        input.style.border = "1px solid red"
         input.style.boxShadow = "0 0 5px red";
         errorSpan.textContent = errorMessage;
         return false;
